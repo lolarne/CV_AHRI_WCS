@@ -5,10 +5,9 @@
     
     .fond{ 
     display: flex;
-    flex-wrap: wrap;
     justify-content : center;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images8.alphacoders.com/107/1076527.jpg");
-    height :1024px; 
+    height :1024px;
 
     }
     
@@ -24,45 +23,43 @@
     padding : 18px ;
     width: 400px;
     height: 400px;
+    margin-bottom: 30px;
     background-color:#F2F8FF ;
     color: #02022F;
     
     }
-    h3{
-        padding-bottom: 20px;
-    } 
     
     
     @media screen and (min-width: 566px)and (max-width:769px){
         .fond{
             display:flex;
-            flex-wrap: wrap;
-            height:100%;
+            background: url("https://images8.alphacoders.com/107/1076527.jpg")no-repeat;
+            height:1024px;
+            min-width: 100%;
+           max-height: 100%;
         } 
         .article1{
-            display: flex;
-            flex-wrap: wrap;
             margin:31px;
             height : 300px;
             width: 300px;
             
-        }  
+        } 
     } 
    @media screen and (max-width: 565px){
     .fond{
         display:flex;
-        flex-wrap: wrap;
-        height: 100%;
+        flex-direction : column;
+        background: url("https://images8.alphacoders.com/107/1076527.jpg")fixed;
+        top : 0;
+        bottom: 0;
+        min-width: 100%;
+        max-height: 100%;
     } 
     .article1{
-        display: flex;
-        flex-wrap: wrap;
+        height: auto;
         margin: 31px;
-        height : 300px; 
+        height : 300px;
         width: 300px;
-        text-align: center;
-        
+
    } 
-   
-  
-} 
+}   

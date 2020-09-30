@@ -1,59 +1,64 @@
-*{
-    margin : 0px;
-    padding:0px;
-    } 
+
     
     .fond{ 
-    display: flex;
-    justify-content : center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images8.alphacoders.com/107/1076527.jpg");
-    height :auto;
-
-    }
-    
-    ul li{
-        list-style: none;
-    } 
-    .article1{ 
-    text-align:center;
-    border-radius: 6px/6px;
-    border: 1px solid #02022F;
-    box-shadow: 4px 4px 8px #02022F ;
-    margin : 40px;
-    padding : 18px ;
-    width: 400px;
-    height: 400px;
-    margin-bottom: 30px;
-    background-color:#F2F8FF ;
-    color: #02022F;
-    
-    }
-    
-    
-    @media screen and (min-width: 566px)and (max-width:769px){
+        display: flex;
+        flex-wrap: wrap;
+        justify-content : center;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images8.alphacoders.com/107/1076527.jpg");
+        height: auto;
+        }
+        h3{
+            padding-bottom: 10px;
+        } 
+        
+        ul li{
+            list-style: none;
+        } 
+        .article1{ 
+        text-align:center;
+        border-radius: 6px/6px;
+        border: 1px solid #02022F;
+        box-shadow: 4px 4px 8px #02022F ;
+        margin : 40px;
+        padding : 18px ;
+        width: 400px;
+        height: 400px;
+        margin-bottom: 30px;
+        background-color:#F2F8FF ;
+        color: #02022F;
+        
+        }
+       
+        
+        
+        @media screen and (min-width: 566px)and (max-width:769px){
+            .fond{
+                display:flex;
+                height:auto;
+               
+            } 
+            .article1{
+                margin: 31px;
+                height : 400px;
+                width: 400px;
+                
+            } 
+        } 
+       @media screen and (max-width: 565px){
         .fond{
             display:flex;
-            height:auto;
-        } 
-        .article1{
-            margin:31px;
-            height : 300px;
-            width: 300px;
+            flex-wrap: wrap;
+            flex-direction : column;
+            align-items: center;
+    
             
         } 
-    } 
-   @media screen and (max-width: 565px){
-    .fond{
-        display:flex;
-        flex-wrap: wrap;
-        flex-direction : column;
-        
-    } 
-    .article1{
-        height: auto;
-        margin: 31px;
-        height : 300px;
-        width: 300px;
-
-   } 
-} 
+        .article1{
+            
+            margin: 31px;
+            height : 300px;
+            width: 300px;
+    
+       } 
+    }
+    

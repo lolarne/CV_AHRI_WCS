@@ -1,0 +1,263 @@
+:root{
+    --dark-violet: #02022F;
+    --white-color: #E6F2FF;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background-color: rgb(251, 250, 255);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.navbar{
+    position: fixed;
+    background-color: rgba(2, 2, 47, 0.8);
+    width: 100%;
+    padding: 16px 0;
+    z-index: 999;
+}
+
+.inner-width{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.navbar .inner-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    background-image: url("../img/logo-cv-ahri.png");
+    background-size: cover;
+    width: 64px;
+    height: 64px;
+}
+
+.navbar .inner-width .navbar-left{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: var(--white-color);
+    width: 50%;
+}
+
+.navbar .inner-width .navbar-left p{
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 32px;
+    text-transform: uppercase;
+}
+
+.menu-burger{
+    background: none;
+    width: 30px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    z-index: 999;
+    position: relative;
+    display: none;
+}
+
+.menu-burger span{
+    display: block;
+    height: 3px;
+    background-color: var(--white-color);
+    margin: 6px 0;
+    border-radius: 8px;
+}
+
+.menu a{
+    color: var(--white-color);
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 32px;
+    transition: .2s linear;
+    text-transform: uppercase;
+}
+
+/*CAROUSEL*/
+#home{
+    height: 100vh;
+    min-height: 500px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/ahri_carousel_1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: carousel 10s linear infinite;
+}
+
+@keyframes carousel{
+    25%{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/ahri_carousel_2.jpg");
+    }
+    50%{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/ahri_carousel_3.jpg");
+    }
+    75%{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/ahri_carousel_4.jpg");
+    }
+}
+
+#home .inner-width{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+}
+
+#home .content{
+    width: 100%;
+    color: var(--white-color);
+}
+
+#home .content h1{
+     font-size: 64px;
+     margin-bottom: 64px;
+}
+
+#home .content .heart-hide{
+    display: none;
+}
+
+#home .content p{
+    font-style: italic;
+    font-size: 24px;
+}
+
+.social-media a{
+    color: var(--white-color);
+    font-size: 32px;
+    margin-top: 64px;
+    margin-left: 16px;
+    margin-right: 16px;
+    transition: .2s linear;
+}
+
+.social-media a:hover{
+    color: var(--dark-violet);
+}
+
+#home .buttons{
+    margin-top: 64px;
+}
+
+#home .buttons a{
+    display: inline-block;
+    margin: 16px 32px;
+    color: var(--white-color);
+    font-size: 24px;
+    font-weight: 500;
+    width: 240px;
+    border: 2px solid;
+    padding: 16px 0;
+    border-radius: 16px;
+    transition: .2s linear;
+    background-color: var(--dark-violet);
+}
+
+#home .buttons a:hover{
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 1075px){
+    .menu-burger{
+        display: block;
+    }
+
+    .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        background-color: #160561;
+        top: 0;
+        right: 0;
+        max-width: 400px;
+        padding: 80px 46px;
+        transition: .3s linear;
+    }
+
+    .menu.active{
+        right: -100%;
+    }
+
+    .menu a{
+        display: block;
+        font-size: 24px;
+        margin: 32px 0;
+    }
+
+    #home{
+        background-position: 50%;
+    }
+}
+
+@media screen and (max-width: 565px){
+    .menu-burger{
+        display: block;
+    }
+
+    .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        background-color: #160561;
+        top: 0;
+        right: 0;
+        max-width: 400px;
+        padding: 80px 46px;
+        transition: .3s linear;
+    }
+
+    .menu.active{
+        right: -100%;
+    }
+
+    .menu a{
+        display: block;
+        font-size: 20px;
+        margin: 32px 0;
+    }
+
+    .navbar .inner-width .navbar-left p{
+        display: none;
+    }
+
+    #home .content h1{
+        font-size: 40px;
+    }
+
+    #home .content .heart-hide{
+        display: inline-block;
+    }
+
+    #home .content .heart-visible{
+        display: none;
+    }
+
+    #home .content p{
+        font-size: 16px;
+    }
+
+    #home .social-media{
+        font-size: 16px;
+    }
+
+    #home .buttons a{
+        font-size: 16px;
+    }
+
+    #home{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/ahri_vertical.jpg");
+        animation: none;
+    }
+}

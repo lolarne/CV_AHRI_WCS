@@ -1,0 +1,103 @@
+:root{
+    --margin1: 8px;
+    --margin2: 16px;
+    --margin3: 24px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.inner-width{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+#titleForm{
+    font-size: 40px;
+}
+
+span{
+    display: inline;
+}
+
+select:hover{
+    cursor: pointer;
+}
+
+.formsection{
+    background-color: rgb(251,250,255);
+    padding: var(--margin3);
+    text-align: center;
+}
+
+#titleForm{
+    padding: var(--margin3);
+}
+
+
+
+#partOne, #partTwo, #partThree{
+    display: flex;
+    justify-content: center;
+}
+
+#partOne select{
+    padding: 14;
+    margin: var(--margin2);
+    width: 100px;
+}
+
+
+
+#partOne input, #partTwo input, textarea{
+    padding: var(--margin2);
+    margin: var(--margin2);
+    background-color:#02022F ;
+    color: rgb(236, 233, 250);
+    width: 100%;
+}
+
+#submit{
+    margin: var(--margin3)
+}
+
+button{
+    padding: var(--margin2);
+    width: 30%;
+    border-radius: 16px;
+    transition: .2s linear;
+    background-color: rgb(248, 221, 226);
+}
+
+button:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+@media screen and (max-width:600px){
+    #partOne, #partTwo, #partThree{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #titleForm{
+        font-size: 32px;
+    }    
+
+    span{
+        display: none;
+    }
+
+    select{
+        width: 500px;
+    }
+
+    button{
+        width: 100px;
+    }
+}
+

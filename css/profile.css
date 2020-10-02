@@ -6,11 +6,6 @@
     text-align: center;
     padding-bottom: 16px;
 }
-
-.sections {
-    background-color: rgb(251, 250, 255)
-}
-
 .inner-width{
     max-width: 1300px;
     margin: 0 auto;
@@ -50,16 +45,15 @@
 .success {
     font-size: 24px;
     padding-top: 5%; 
+    margin-bottom: 64px;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: .2s linear;
 }
-
 .success:hover{
     transform: scale(1.05);
 }
-
 .success p{
     border: double #e6f2ff 4px;
     background-color: #02022F;
@@ -75,7 +69,6 @@ align-items: center;
 flex: wrap;
 margin-bottom: 32px;
 }
-
 .cursor {
     position: fixed;
     width: 50px;
@@ -93,18 +86,15 @@ margin-bottom: 32px;
     .cursor{
         display: none;
     }
-    
     .profile-image{
         animation: changePic 8s linear infinite;
     }
-
     .profileContact li {
         font-size: 20px;
     }
     .success{
         font-size: 20px;
     }
-
     @keyframes changePic{
         50%{
             background-image: url("../img/ahriFee.jpg");
@@ -137,11 +127,9 @@ margin-bottom: 32px;
     .profileContact li {
         font-size: 16px;
     }
-
     .profile-image{
         animation: changePic 8s linear infinite;
     }
-
     @keyframes changePic{
         50%{
             background-image: url("../img/ahriFee.jpg");

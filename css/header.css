@@ -3,19 +3,12 @@
     --white-color: #E6F2FF;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-}
-
 body{
     background-color: rgb(251, 250, 255);
     font-family: 'Ubuntu', sans-serif;
 }
 
-.navbar{
+#navbar{
     position: fixed;
     background-color: rgba(2, 2, 47, 0.8);
     width: 100%;
@@ -29,7 +22,7 @@ body{
     padding: 0 40px;
 }
 
-.navbar .inner-width{
+#navbar .inner-width{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -42,7 +35,7 @@ body{
     height: 64px;
 }
 
-.navbar .inner-width .navbar-left{
+#navbar .inner-width .navbar-left{
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -50,7 +43,7 @@ body{
     width: 50%;
 }
 
-.navbar .inner-width .navbar-left p{
+#navbar .inner-width .navbar-left p{
     font-size: 20px;
     font-weight: 500;
     margin-left: 32px;
@@ -98,6 +91,7 @@ body{
 @keyframes carousel{
     25%{
         background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/ahri_carousel_2.jpg");
+
     }
     50%{
         background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../img/ahri_carousel_3.jpg");
@@ -144,7 +138,7 @@ body{
 }
 
 .social-media a:hover{
-    color: var(--dark-violet);
+    transform: scale(1.5);
 }
 
 #home .buttons{
@@ -228,7 +222,7 @@ body{
         margin: 32px 0;
     }
 
-    .navbar .inner-width .navbar-left p{
+    #navbar .inner-width .navbar-left p{
         display: none;
     }
 

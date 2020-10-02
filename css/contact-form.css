@@ -1,0 +1,154 @@
+:root{
+    --margin1: 8px;
+    --margin2: 16px;
+    --margin3: 24px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.inner-width{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+#titleForm{
+    font-size: 40px;
+    color: #02022F;
+    margin: 64px;
+    border-bottom: 4px solid #02022F;
+    text-align: center;
+    padding-bottom: 16px;
+}
+
+#littleTitle{
+    display: none;
+}
+
+span{
+    display: inline;
+}
+
+#select:hover{
+    cursor: pointer;
+}
+
+.formsection{
+    background-color: rgb(251,250,255);
+    padding: var(--margin3);
+    text-align: center;
+}
+
+
+#partOne, #partTwo, #partThree{
+    display: flex;
+    justify-content: center;
+}
+
+#partOne select{
+    padding: 14;
+    margin: var(--margin2);
+    width: 100px;
+}
+
+
+
+#partOne input, #partTwo input, textarea{
+    padding: var(--margin2);
+    margin: var(--margin2);
+    background-color:#02022F ;
+    color: rgb(236, 233, 250);
+    width: 100%;
+}
+
+#conditionForm{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: var(--margin2);
+    font-size: var(--margin2);
+}
+
+#submit{
+    margin: var(--margin3)
+}
+
+button{
+    padding: var(--margin2);
+    width: 30%;
+    border-radius: 16px;
+    transition: .2s linear;
+    background-color: rgb(248, 221, 226);
+}
+
+button:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.popup{
+    display: none;
+}
+
+#textPopup{
+    background-color: rgb(219, 212, 252);
+    text-align: center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    border: solid 4px #02022F;
+    border-radius: 16px;
+    padding: var(--margin3);
+    box-shadow: 4px 4px 8px #02022F;
+    font-size: 20px;
+}
+
+#titlePopup{
+    padding-bottom: 20px;
+    font-size: 24px;
+}
+
+#citationPopup{
+    padding-top: 50px;
+    padding-bottom: 5px;
+    font-style: italic;
+    font-size: 20px;
+}
+
+
+@media screen and (max-width:600px){
+    #partOne, #partTwo, #partThree{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #titleForm{
+        display: none;
+    }    
+
+    #littleTitle{
+        display: block;
+        margin: 64px;
+        font-size: 32px;
+        border-bottom: 4px solid #02022F;
+        text-align: center;
+        padding-bottom: 16px;
+    }
+
+    span{
+        display: none;
+    }
+
+    select{
+        width: 500px;
+    }
+
+    button{
+        width: 100px;
+    }
+}
+

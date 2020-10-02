@@ -17,13 +17,22 @@
 
 #titleForm{
     font-size: 40px;
+    color: #02022F;
+    margin: 64px;
+    border-bottom: 4px solid #02022F;
+    text-align: center;
+    padding-bottom: 16px;
+}
+
+#littleTitle{
+    display: none;
 }
 
 span{
     display: inline;
 }
 
-select:hover{
+#select:hover{
     cursor: pointer;
 }
 
@@ -32,11 +41,6 @@ select:hover{
     padding: var(--margin3);
     text-align: center;
 }
-
-#titleForm{
-    padding: var(--margin3);
-}
-
 
 
 #partOne, #partTwo, #partThree{
@@ -60,6 +64,13 @@ select:hover{
     width: 100%;
 }
 
+#conditionForm{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: var(--margin2);
+    font-size: var(--margin2);
+}
+
 #submit{
     margin: var(--margin3)
 }
@@ -77,6 +88,37 @@ button:hover{
     cursor: pointer;
 }
 
+.popup{
+    display: none;
+}
+
+#textPopup{
+    background-color: rgb(219, 212, 252);
+    text-align: center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    border: solid 4px #02022F;
+    border-radius: 16px;
+    padding: var(--margin3);
+    box-shadow: 4px 4px 8px #02022F;
+    font-size: 20px;
+}
+
+#titlePopup{
+    padding-bottom: 20px;
+    font-size: 24px;
+}
+
+#citationPopup{
+    padding-top: 50px;
+    padding-bottom: 5px;
+    font-style: italic;
+    font-size: 20px;
+}
+
+
 @media screen and (max-width:600px){
     #partOne, #partTwo, #partThree{
         display: flex;
@@ -85,8 +127,17 @@ button:hover{
     }
 
     #titleForm{
-        font-size: 32px;
+        display: none;
     }    
+
+    #littleTitle{
+        display: block;
+        margin: 64px;
+        font-size: 32px;
+        border-bottom: 4px solid #02022F;
+        text-align: center;
+        padding-bottom: 16px;
+    }
 
     span{
         display: none;

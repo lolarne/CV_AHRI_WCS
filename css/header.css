@@ -61,7 +61,7 @@ body{
     display: none;
 }
 
-.menu-burger span{
+.menu-burger .burger{
     display: block;
     height: 3px;
     background-color: var(--white-color);

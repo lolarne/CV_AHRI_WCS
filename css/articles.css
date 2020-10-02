@@ -68,10 +68,14 @@
            display: flex;
            justify-content: center;
            align-items: center;
-        } 
+           transition: .2s linear;
+        }
+
+        .citation1:hover{
+            transform: scale(1.05);
+        }
        
         .citation{
-            
             background-color: #02022F;
             color : #F2F8FF;
             border :double #F2F8FF 4px;
@@ -84,7 +88,13 @@
            display: flex;
            justify-content: center;
            align-items: center;
+           transition: .2s linear;
         } 
+
+        .citation:hover{
+            transform: scale(1.05);
+        }
+
         .progress{
             width: 220%;
             background-color: #02022F;

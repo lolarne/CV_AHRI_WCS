@@ -1,7 +1,11 @@
+#profile{
+    height: 90vh;
+    background-color: #F2F8FF;
+}
 .title {
     font-size: 40px;
     color: #02022F;
-    margin: 64px;
+    padding-top: 64px;
     border-bottom: 4px solid #02022F;
     text-align: center;
     padding-bottom: 16px;
@@ -44,30 +48,25 @@
 }
 .success {
     font-size: 24px;
-    padding-top: 5%; 
     margin-bottom: 64px;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: .2s linear;
-}
-.success:hover{
-    transform: scale(1.05);
 }
 .success p{
-    border: double #e6f2ff 4px;
-    background-color: #02022F;
     padding: 24px;
-    color: #e6f2ff;
     text-align: center;
+    background-color: #F2F8FF;
+    color : #02022F;
+    border :double #02022F 6px;
 }
 .parent {
-
-display: flex;
-justify-content: space-evenly;
-align-items: center;
-flex: wrap;
-margin-bottom: 32px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex: wrap;
+    margin-bottom: 32px;
+    margin-top: 64px;
 }
 .cursor {
     position: fixed;

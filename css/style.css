@@ -4,16 +4,19 @@
 @import "contact-form.css";
 @import "footer.css";
 
+html{
+    scroll-behavior: smooth;
+}
+
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
     font-family: 'Ubuntu', sans-serif;
+    box-sizing: border-box;
     text-decoration: none;
     list-style: none;
 }
 
 body{
     background-color: rgb(251, 250, 255);
-    cursor: move;
+    margin: 0;
+    padding: 0;
 }

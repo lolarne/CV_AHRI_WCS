@@ -1,101 +1,66 @@
+.fond{ 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content : center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/background_cv_ahri");
+    height: auto;
+    padding: 32px 0;
+}
 
-    
-    .fond{ 
-        display: flex;
-        flex-wrap: wrap;
-        justify-content : center;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/background_cv_ahri");
-        height: auto;
-        padding: 32px 0;
-        }
-        .position{
-            display: flex;
-            min-width: 35%;
-            justify-content: center;
-        } 
-        ul li{
+ul li{
+    list-style: none;
+    padding :18px;
+    font-size: 20px;
+}
 
-            list-style: none;
-            padding :18px;
-            
-        } 
-        h3{
-            text-align: center;
-            padding-bottom: 10px;
-        } 
-        .titre{
-          padding-left: 80%;
-        } 
-       .article1 li::before{
+h3{
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 32px;
+}
+
+.article li::before{        
+    margin-right: 8px;
+    content: "";
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-image: radial-gradient(rgb(212, 219, 235),  rgba(39, 125, 238, 0.808));
+    display: inline-block;
+} 
         
-        margin-right: 8px;
-        content: "";
-        width: 16px;
-        height: 16px;
-        border-radius: 50%;
-        background-image: radial-gradient(rgb(212, 219, 235),  rgba(39, 125, 238, 0.808));
-        display: inline-block;
-       } 
-        
-        .article1 { 
-        display: flex;
-        flex-wrap: wrap;
-        border-radius: 6px/6px;
-        border: 1px solid #02022F;
-        box-shadow: 4px 4px 8px #02022F ;
-        margin : 40px;
-        padding : 18px ;
-        width: 400px;
-        height: 400px;
-        margin-bottom: 30px;
-        background-color:#F2F8FF ;
-        color: #02022F;
-        
-        }
-      
+.article { 
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 6px/6px;
+    border: 1px solid #02022F;
+    box-shadow: 4px 4px 8px #02022F ;
+    margin : 40px;
+    padding : 18px ;
+    width: 600px;
+    height: 600px;
+    margin-bottom: 30px;
+    background-color:#F2F8FF ;
+    color: #02022F;
+}
+
+.citation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
        
-        .citation1{
-            background-color: #02022F;
-            color : #F2F8FF;
-            border : 4px double #F2F8FF;
-           height: auto;
-           width: 95%; 
-           padding :8px;
-           text-align: center;
-           margin-top:60px;
-           align-items: center;
-           font-style :italic;
-           display: flex;
-           justify-content: center;
-           align-items: center;
-           transition: .2s linear;
-        }
+.citation p{
+    padding: 24px;
+    text-align: center;
+    background-color: #F2F8FF;
+    color : #02022F;
+    border :double #02022F 6px;
+    font-size: 20px;
+}
 
-        .citation1:hover{
-            transform: scale(1.05);
-        }
-       
-        .citation{
-            background-color: #02022F;
-            color : #F2F8FF;
-            border :double #F2F8FF 4px;
-           height: auto;
-           width: 95%; 
-           padding :8px;
-           margin-top: 18px;
-           text-align: center;
-           font-style: italic;
-           display: flex;
-           justify-content: center;
-           align-items: center;
-           transition: .2s linear;
-        } 
-
-        .citation:hover{
-            transform: scale(1.05);
-        }
-
-        .progress{
+.progress{
             width: 220%;
             background-color: #02022F;
             border-radius: 10px;
@@ -126,7 +91,7 @@
                 height:auto;
                
             } 
-            .article1{
+            .article{
                 margin: 31px;
                 height : 400px;
                 width: 400px;
@@ -142,7 +107,7 @@
     
             
         } 
-        .article1{
+        .article{
             
             margin: 31px;
             height : auto;

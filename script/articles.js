@@ -9,5 +9,5 @@ let values =[
 
 progressBars.forEach((progress,index)=>{
 progress.style.width = values[index];
-} );
+});
 });

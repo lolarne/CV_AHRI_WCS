@@ -4,7 +4,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content : center;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://cutewallpaper.org/21/purple-fantasy-wallpapers/Warrior-Angel-Fantasy-Art-Wallpaper-1333x1000-148022-.jpg");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/background_cv_ahri");
         height: auto;
         }
         .position{

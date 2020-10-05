@@ -2,7 +2,7 @@
     height: 90vh;
     background-color: #F2F8FF;
 }
-.title {
+.title-profile {
     font-size: 40px;
     color: #02022F;
     padding-top: 64px;
@@ -10,6 +10,9 @@
     text-align: center;
     padding-bottom: 16px;
 }
+
+
+
 .inner-width{
     max-width: 1300px;
     margin: 0 auto;
@@ -113,10 +116,10 @@
     .cursor{
         display: none;
     }
-    .title {
+    .title-profile {
         font-size: 32px;
     }
-    .title span{
+    .title-profile span{
         display: none;
     }
     .profile-image{

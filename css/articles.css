@@ -1,130 +1,128 @@
-.fond{ 
+.fond {
     display: flex;
     flex-wrap: wrap;
-    justify-content : center;
+    justify-content: center;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/background_cv_ahri");
     height: auto;
     padding: 32px 0;
 }
 
-ul li{
+ul li {
     list-style: none;
-    padding :18px;
+    padding: 18px;
     font-size: 20px;
 }
 
-h3{
+h3 {
     text-align: center;
     padding-bottom: 10px;
     font-size: 32px;
 }
 
-.article li::before{        
+.article li::before {
     margin-right: 8px;
     content: "";
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    background-image: radial-gradient(rgb(212, 219, 235),  rgba(39, 125, 238, 0.808));
+    background-image: radial-gradient(rgb(212, 219, 235), rgba(39, 125, 238, 0.808));
     display: inline-block;
-} 
-        
-.article { 
+}
+
+.article {
     display: flex;
     flex-wrap: wrap;
     border-radius: 6px/6px;
     border: 1px solid #02022F;
-    box-shadow: 4px 4px 8px #02022F ;
-    margin : 40px;
-    padding : 18px ;
+    box-shadow: 4px 4px 8px #02022F;
+    margin: 40px;
+    padding: 18px;
     width: 600px;
     height: 600px;
     margin-bottom: 30px;
-    background-color:#F2F8FF ;
+    background-color: #F2F8FF;
     color: #02022F;
 }
 
-.citation{
+.citation {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
+    transition: .2s linear;
 }
-       
-.citation p{
+
+.citation:hover{
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+.citation p {
     padding: 24px;
     text-align: center;
-    background-color: #F2F8FF;
-    color : #02022F;
-    border :double #02022F 6px;
+    background-color: #02022F;
+    color: #F2F8FF;
+    border: double #F2F8FF 6px;
     font-size: 20px;
 }
 
-.progress{
-            width: 220%;
-            background-color: #02022F;
-            border-radius: 10px;
-            height: 15px;
-            margin-left: 18px;
-            margin-top: -10%;
+.progress {
+    width: 220%;
+    background-color: #02022F;
+    border-radius: 10px;
+    height: 15px;
+    margin-left: 18px;
+    margin-top: -10%;
+}
 
-        } 
-        .progress-bar{
-            height: 100%;
-            width: 0%;
-            background-color: #b7d2f1;
-            border-radius: 10px;
-            position: relative;
-            transition :all 1.5s;
+.progress-bar {
+    height: 100%;
+    width: 0%;
+    background-color: #b7d2f1;
+    border-radius: 10px;
+    position: relative;
+    transition: all 1.5s;
+}
 
-        } 
-        .progress-bar span{
-            position :absolute;
-            top :0%;
-            right: 0%;
-        } 
-      
-        
-        @media screen and (min-width: 566px)and (max-width:769px){
-            .fond{
-                display:flex;
-                height:auto;
-               
-            } 
-            .article{
-                margin: 31px;
-                height : 400px;
-                width: 400px;
-                
-            } 
-        } 
-       @media screen and (max-width: 565px){
-        .fond{
-            display:flex;
-            flex-wrap: wrap;
-            flex-direction : column;
-            align-items: center;
-    
-            
-        } 
-        .article{
-            
-            margin: 31px;
-            height : auto;
-            width: 300px;
-    
-       } 
-       .citation{
-         flex-wrap: wrap;
-         width: 250px;
-       } 
-       .titre{
+.progress-bar span {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+}
+
+@media screen and (min-width: 566px)and (max-width:769px) {
+    .fond {
+        display: flex;
+        height: auto;
+    }
+    .article {
+        margin: 31px;
+        height: 400px;
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 565px) {
+    .fond {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    .article {
+        margin: 31px;
+        height: auto;
+        width: 300px;
+    }
+    .citation {
+        flex-wrap: wrap;
+        width: 250px;
+    }
+    .titre {
         margin: 0 auto;
         padding-left: 50%;
-    } 
-    .progress{
-        width : 150%;
-    } 
-     
     }
-    
+    .progress {
+        width: 150%;
+    }
+}

@@ -1,0 +1,89 @@
+:root {
+    --dark-violet: #02022F;
+    --white-color: #E6F2FF;
+}
+
+.footer {
+    background-color: var(--dark-violet);
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: var(--white-color);
+}
+
+.container-footer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 64px;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 58%;
+}
+
+.footer-sm, .footer-ask {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-sm h4, .footer-ask h4 {
+    font-size: 20px;
+}
+
+.footer-sm a, .footer-ask a {
+    padding-bottom: 12px;
+    font-size: 18px;
+    color: var(--white-color);
+}
+
+.footer-credits h4 {
+    font-size: 20px;
+}
+
+.footer-credits p {
+    font-size: 18px;
+}
+
+@media screen and (max-width: 1075px) {
+    .container-footer {
+        padding-bottom: 32px;
+    }
+    .footer-info {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+    .footer-sm a, .footer-ask a {
+        text-align: center;
+    }
+    .footer-credits {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 565px) {
+    .footer-info {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .footer-ask h4 {
+        margin-top: 32px;
+    }
+    .footer-sm h4, .footer-ask h4 {
+        font-size: 18px;
+    }
+    .footer-sm a, .footer-ask a {
+        font-size: 14px;
+    }
+    .footer-credits h4 {
+        font-size: 18px;
+    }
+    .footer-credits p {
+        font-size: 14px;
+    }
+}

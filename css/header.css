@@ -3,11 +3,6 @@
     --white-color: #E6F2FF;
 }
 
-body{
-    background-color: rgb(251, 250, 255);
-    font-family: 'Ubuntu', sans-serif;
-}
-
 #navbar{
     position: fixed;
     background-color: rgba(2, 2, 47, 0.8);

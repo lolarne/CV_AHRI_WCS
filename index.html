@@ -75,36 +75,17 @@
             </div>
             <div class="profile-citation">
                 <a href="#profile" target="_self">
-                    <p onclick="audioReponse(audio1, 'Je peux faire battre votre coeur...ou l\'arrêter...')">Pourquoi me
-                        choisir...?</p>
+                    <p onclick="audioReponse(audioProfile, 'Je peux faire battre votre coeur...ou l\'arrêter...')">Pourquoi me choisir...?</p>
                 </a>
             </div>
         </div>
     </section>
 
-    <!--<section id="profile"">
-        <div class=" inner-width">
-        <h2 class="title-profile"><span class="heart">❤️ </span>PROFIL <span class="heart">❤️</span></h2>
-        <div class="parent">
-            <div class="profile-image"></div>
-            <ul class="profileContact">
-                <li> Ahri FOX </li>
-                <li>22 rue du Bush de Runaterra</li>
-                <li> vastaya_forever@league.com </li>
-                <li> 07 99 99 99 99</li>
-            </ul>
-        </div>
-        <div class="success">
-            <a href="#profile" target="_self" onclick="audio1.play()"><p> <em>" Je peux faire battre votre coeur...ou l'arrêter..."</em></p></a>
-        </div>
-        </div>
-    </section>-->
-
     <!--ARTICLES-->
     <section id="sectionArticles" class="fond">
         <div class="inner-width">
             <div class="container-article">
-                <div class="article">
+                <div id="exp" class="article">
                     <div class="article-info">
                         <h3 class="article-title">Expériences</h3>
                         <div class="article-list">
@@ -116,14 +97,13 @@
                         </div>
                     </div>
                     <div class="article-citation">
-                        <a href="#profile" target="_self">
-                            <p onclick="audioReponse(audio1, 'Je peux faire battre votre coeur...ou l\'arrêter...')">
-                                Pourquoi me
-                                choisir...?</p>
+                        <a href="#exp" target="_self">
+                            <p onclick="audioReponse(audioExp, 'Les mortels... Ils ne comprennent pas vite, mais ils me suivent rapidement !')">
+                                Qu'avez-vous appris ?</p>
                         </a>
                     </div>
                 </div>
-                <div class="article">
+                <div id="competences" class="article">
                     <div class="article-info">
                         <h3 class="article-title">Compétences</h3>
                         <div class="article-list">
@@ -157,14 +137,13 @@
                         </div>
                     </div>
                     <div class="article-citation">
-                        <a href="#profile" target="_self">
-                            <p onclick="audioReponse(audio1, 'Je peux faire battre votre coeur...ou l\'arrêter...')">
-                                Pourquoi me
-                                choisir...?</p>
+                        <a href="#competences" target="_self">
+                            <p onclick="audioReponse(audioComp, 'Quand tu seras dans l\'obscurité, tu verra une renarde : suis là !')">
+                                Comment arriver à votre niveau ?</p>
                         </a>
                     </div>
                 </div>
-                <div class="article">
+                <div id="formation" class="article">
                     <div class="article-info">
                         <h3 class="article-title">Formations</h3>
                         <div class="article-list">
@@ -173,14 +152,13 @@
                         </div>
                     </div>
                     <div class="article-citation">
-                        <a href="#profile" target="_self">
-                            <p onclick="audioReponse(audio1, 'Je peux faire battre votre coeur...ou l\'arrêter...')">
-                                Pourquoi me
-                                choisir...?</p>
+                        <a href="#formation" target="_self">
+                            <p onclick="audioReponse(audioFormation, 'Les vrais chasseurs ont des crocs...')">
+                                Votre approche en séduction ? </p>
                         </a>
                     </div>
                 </div>
-                <div class="article">
+                <div id="hobbie" class="article">
                     <div class="article-info">
                         <h3 class="article-title">Hobbies</h3>
                         <div class="article-list">
@@ -190,10 +168,10 @@
                         </div>
                     </div>
                     <div class="article-citation">
-                        <a href="#profile" target="_self">
-                            <p onclick="audioReponse(audio1, 'Je peux faire battre votre coeur...ou l\'arrêter...')">
-                                Pourquoi me
-                                choisir...?</p>
+                        <a href="#hobbie" target="_self">
+                            <p onclick="audioReponse(audioHobbie, 'Profitons en pour nous amuser un peu ! Quelqu\'un a envie de se faire pourchasser ? ')">
+                                Quelque chose à ajouter ?
+                            </p>
                         </a>
                     </div>
                 </div>
@@ -351,8 +329,8 @@
                     </div>
                     <div class="footer-ask">
                         <h4>En savoir plus</h4>
-                        <a href="#" class="more-info">A propos</a>
-                        <a href="#" class="more-info">FAQ</a>
+                        <a href="https://universe.leagueoflegends.com/fr_FR/champion/ahri/" class="more-info" target="blank">A propos</a>
+                        <a href="https://www.riotgamesfrance.fr/educationnel/league-of-legends/debutant-ahri-guide-de-ses-sorts-et-de-son-gameplay-dans-lol" class="more-info" target="blank">FAQ</a>
                     </div>
                 </div>
                 <div class="footer-credits">

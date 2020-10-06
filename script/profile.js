@@ -12,8 +12,8 @@ btnSM.addEventListener('mouseover', function(){
 */
 
 /*FICHIERS AUDIO*/
-const audio1 = new Audio();
-audio1.src ="AudioCitations/AhriCitation1.mp3";
+const audioProfile = new Audio();
+audioProfile.src ="AudioCitations/AhriCitation1.mp3";
 
 /*FONCTIONS*/
 const audioReponse = (audio, reponse) => {

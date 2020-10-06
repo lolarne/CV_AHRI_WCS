@@ -40,7 +40,7 @@
     margin-bottom: 128px;
 }
 
-.profile-citation p:hover{
+.profile-citation p:hover {
     transform: scale(1.02);
 }
 
@@ -67,15 +67,11 @@
     width: 280px;
     border-radius: 100%;
     border: solid 4px #02022F;
-    /* display: flex;
-    align-items: baseline; */
 }
 
 .profile-info .info {
     font-size: 24px;
     list-style: none;
-    /* justify-content: center;
-    align-items: center; */
 }
 
 .profile-info .info::before {
@@ -88,45 +84,6 @@
     display: inline-block;
 }
 
-/* .success {
-    font-size: 24px;
-    margin-bottom: 64px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
-
-/* .success p {
-    padding: 24px;
-    text-align: center;
-    background-color: #F2F8FF;
-    color: #02022F;
-    border: double #02022F 6px;
-} */
-
-/* .parent {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex: wrap;
-    margin-bottom: 32px;
-    margin-top: 64px;
-} */
-
-/* .cursor {
-    position: fixed;
-    z-index: 1;
-    width: 50px;
-    height: 50px;
-    background-image: radial-gradient(circle at 50% 50%, rgb(214, 229, 238), rgba(163, 171, 221, 0.986) 20%, rgba(115, 170, 241, 0.808) 50%);
-    border-radius: 50%;
-    margin: 10px 10px;
-    left: 0;
-    top: 0;
-    pointer-events: none;
-    transform: translate(-50%, -50%);
-} */
-
 @media screen and (max-width: 769px) {
     .profile-container {
         flex-direction: column;
@@ -135,12 +92,6 @@
         animation: changePic 8s linear infinite;
         margin-bottom: 64px;
     }
-    /* .profile-info .info {
-        font-size: 20px;
-    }
-    .profile-citation {
-        font-size: 20px;
-    } */
     @keyframes changePic {
         50% {
             background-image: url("../img/ahriFee.jpg");
@@ -175,12 +126,4 @@
     .profile-citation p {
         font-size: 16px;
     }
-    /* .profile-image {
-        animation: changePic 8s linear infinite;
-    }
-    @keyframes changePic {
-        50% {
-            background-image: url("../img/ahriFee.jpg");
-        }
-    } */
 }

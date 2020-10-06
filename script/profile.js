@@ -10,5 +10,14 @@ btnSM.addEventListener('mouseover', function(){
     cursor.style.cssText = "display: none";
 })
 */
+
+/*FICHIERS AUDIO*/
 const audio1 = new Audio();
 audio1.src ="AudioCitations/AhriCitation1.mp3";
+
+/*FONCTIONS*/
+const audioReponse = (audio, reponse) => {
+    audio.play();
+    const phrase = event.target;
+    phrase.textContent = reponse;
+}

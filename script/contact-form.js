@@ -31,22 +31,22 @@ buttonSubmit.addEventListener('click', function (event) {
 
 
             if (phoneUser != "") {
-                paragraphPopup.innerHTML = (`Merci ${optionValue} ${nameUser}, une réponse te sera envoyée au ${phoneUser} ou sur ton addresse mail: ${email} 💋`);
+                paragraphPopup.innerHTML = (`Merci ${optionValue} ${nameUser}, une réponse te sera envoyée au ${phoneUser} ou sur ton addresse mail : ${email} 💋`);
             }
             else {
-                paragraphPopup.innerHTML = (`Merci ${optionValue} ${nameUser}, une réponse te sera envoyée sur ton addresse mail: ${email} 💋`);
+                paragraphPopup.innerHTML = (`Merci ${optionValue} ${nameUser}, une réponse te sera envoyée sur ton addresse mail : ${email} 💋`);
             }
 
         }
 
         else if (optionValue === "Madame") {
             titlePopup.innerHTML = "Merci Beautée!"
-            citationPopup.innerHTML = '"Astuce beauté? Hydratez votre peau avec les larmes de vos ennemi(e)s!"';
+            citationPopup.innerHTML = '"Astuce beauté ? Hydratez votre peau avec les larmes de vos ennemi(e)s !"';
             if (phoneUser != "") {
-                paragraphPopup.innerHTML = (`Merci ${optionValue} ${nameUser}, une réponse te sera envoyée au ${phoneUser} ou sur ton addresse mail: ${email} 💋`);
+                paragraphPopup.innerHTML = (`Merci ${optionValue} ${nameUser}, une réponse te sera envoyée au ${phoneUser} ou sur ton addresse mail : ${email} 💋`);
             }
             else {
-                paragraphPopup.innerHTML = (`Merci ${optionValue} ${nameUser}, une réponse te sera envoyée sur ton addresse mail: ${email} 💋`);
+                paragraphPopup.innerHTML = (`Merci ${optionValue} ${nameUser}, une réponse te sera envoyée sur ton addresse mail : ${email} 💋`);
             }
         }
 
@@ -54,10 +54,10 @@ buttonSubmit.addEventListener('click', function (event) {
             titlePopup.innerHTML = "Merci membre du peuple des Vastayas"
             citationPopup.innerHTML = '"Révélez moi vos secrets..."';
             if (phoneUser != "") {
-                paragraphPopup.innerHTML = (`Merci ${optionValue} ${nameUser}, une réponse te sera envoyée au ${phoneUser} ou sur ton addresse mail: ${email} 💋`);
+                paragraphPopup.innerHTML = (`Merci ${nameUser}, une réponse te sera envoyée au ${phoneUser} ou sur ton addresse mail : ${email} 💋`);
             }
             else {
-                paragraphPopup.innerHTML = (`Merci ${optionValue} ${nameUser}, une réponse te sera envoyée sur ton addresse mail: ${email} 💋`);
+                paragraphPopup.innerHTML = (`Merci ${nameUser}, une réponse te sera envoyée sur ton addresse mail : ${email} 💋`);
             }
         }
 
@@ -100,12 +100,20 @@ buttonSubmit.addEventListener('click', function (event) {
     }
 });
 
-// const audioForm = () => {
-//     let optionValueAudio = document.getElementById('select').value;
-//     console.log("test");
-//     if (optionValueAudio === "Monsieur") {
-//         const audioMonsieur = new Audio();
-//         audioMonsieur.src = "AudioCitations/SiTuVeuxJouerAvecMoi.mp3";
-//         audioMonsieur.play();
-//     }
-// }
+const audioForm = () => {
+    let optionValueAudio = document.getElementById('select').value;
+    console.log("test");
+    if (optionValueAudio === "Monsieur") {
+        const audioMonsieur = new Audio();
+        audioMonsieur.src = "AudioCitations/SiTuVeuxJouerAvecMoi.mp3";
+        audioMonsieur.play();
+    }else if(optionValueAudio === "Madame"){
+        const audioMadame = new Audio();
+        audioMadame.src = "AudioCitations/AstuceBeaute.mp3";
+        audioMadame.play();
+    }else{
+        const audioAutre = new Audio();
+        audioAutre.src = "AudioCitations/RévélezMoiVosSecrets.mp3";
+        audioAutre.play();
+    }
+}

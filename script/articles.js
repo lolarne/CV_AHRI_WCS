@@ -18,7 +18,7 @@ const audioExp = new Audio();
 audioExp.src = "AudioCitations/LesMortels.mp3";
 
 const audioComp = new Audio();
-audioComp.src = "AudioCitations/QuandTuSeraDansLobscurite.mp3";
+audioComp.src = "AudioCitations/JeNeFrimePas.mp3";
 
 const audioFormation = new Audio();
 audioFormation.src = "AudioCitations/LesVraisChasseursOntDesCrocs.mp3";

@@ -29,6 +29,9 @@ buttonSubmit.addEventListener('click', function (event) {
             titlePopup.innerHTML = "Thanks Darling";
             citationPopup.innerHTML = '"Si tu veux jouer avec moi, j\'espère que tu connais les règles..."';
 
+            const audioMonsieur = new Audio();
+            audioMonsieur.src = "AudioCitations/SiTuVeuxJouerAvecMoi.mp3";
+            audioMonsieur.play();
 
             if (phoneUser != "") {
                 paragraphPopup.innerHTML = (`Merci ${optionValue} ${nameUser}, une réponse te sera envoyée au ${phoneUser} ou sur ton addresse mail : ${email} 💋`);
@@ -42,6 +45,11 @@ buttonSubmit.addEventListener('click', function (event) {
         else if (optionValue === "Madame") {
             titlePopup.innerHTML = "Merci Beautée!"
             citationPopup.innerHTML = '"Astuce beauté ? Hydratez votre peau avec les larmes de vos ennemi(e)s !"';
+
+            const audioMadame = new Audio();
+            audioMadame.src = "AudioCitations/AstuceBeaute.mp3";
+            audioMadame.play();
+
             if (phoneUser != "") {
                 paragraphPopup.innerHTML = (`Merci ${optionValue} ${nameUser}, une réponse te sera envoyée au ${phoneUser} ou sur ton addresse mail : ${email} 💋`);
             }
@@ -53,6 +61,11 @@ buttonSubmit.addEventListener('click', function (event) {
         else {
             titlePopup.innerHTML = "Merci membre du peuple des Vastayas"
             citationPopup.innerHTML = '"Révélez moi vos secrets..."';
+
+            const audioAutre = new Audio();
+            audioAutre.src = "AudioCitations/RévélezMoiVosSecrets.mp3";
+            audioAutre.play();
+
             if (phoneUser != "") {
                 paragraphPopup.innerHTML = (`Merci ${nameUser}, une réponse te sera envoyée au ${phoneUser} ou sur ton addresse mail : ${email} 💋`);
             }
@@ -91,29 +104,8 @@ buttonSubmit.addEventListener('click', function (event) {
             });
         }
 
-
-
-
         else {
             alert("Erreur");
         }
     }
 });
-
-const audioForm = () => {
-    let optionValueAudio = document.getElementById('select').value;
-    console.log("test");
-    if (optionValueAudio === "Monsieur") {
-        const audioMonsieur = new Audio();
-        audioMonsieur.src = "AudioCitations/SiTuVeuxJouerAvecMoi.mp3";
-        audioMonsieur.play();
-    }else if(optionValueAudio === "Madame"){
-        const audioMadame = new Audio();
-        audioMadame.src = "AudioCitations/AstuceBeaute.mp3";
-        audioMadame.play();
-    }else{
-        const audioAutre = new Audio();
-        audioAutre.src = "AudioCitations/RévélezMoiVosSecrets.mp3";
-        audioAutre.play();
-    }
-}

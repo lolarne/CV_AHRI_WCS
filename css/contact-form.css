@@ -1,4 +1,5 @@
 :root{
+    --margin0: 4px;
     --margin1: 8px;
     --margin2: 16px;
     --margin3: 24px;
@@ -32,30 +33,35 @@
     cursor: pointer;
 }
 
+.select{
+    display: flex;
+    justify-content: center;
+    height: 53px;
+    margin-top: 31px;
+}
+
 .formsection{
-    height: 90vh;
+    min-height: 100vh;
     background-color: #F2F8FF;
     padding: var(--margin3);
     text-align: center;
 }
 
 
-#partOne, #partTwo, #partThree{
-    display: flex;
-    justify-content: center;
-}
-
-#partOne select{
-    padding: 14;
-    margin: var(--margin2);
-    width: 100px;
+#partOne{    
+    display: inline-flex;
+    justify-content: flex-start;
+    width: 100%;
 }
 
 
+#label1.displayLabel{
+    min-width: 92%;
+}
 
-#partOne input, #partTwo input, textarea{
+.displayLabel input, textarea{
     padding: var(--margin2);
-    margin: var(--margin2);
+    margin: var(--margin0);
     background-color:#02022F ;
     color: rgb(236, 233, 250);
     width: 100%;
@@ -70,6 +76,16 @@
 
 #submit{
     margin: var(--margin3)
+}
+
+.displayLabel label{
+    display: flex;
+    justify-content: flex-start;
+    margin: var(--margin0);
+}
+
+.displayLabel{
+    margin-bottom: 20px;
 }
 
 .btnSubmit{
@@ -88,6 +104,7 @@
 .popup{
     display: none;
     margin-bottom: 64px;
+    margin-top: -35%;
 }
 
 #textPopup{
@@ -118,7 +135,10 @@
 
 
 @media screen and (max-width:600px){
-    #partOne, #partTwo, #partThree{
+    .popup{
+        margin-top: -140%;
+    }
+    #partOne, #partTwo{
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
@@ -127,6 +147,10 @@
     #titleForm{
         display: none;
     }    
+
+    .displayLabel, #select{
+        margin-bottom: 20px;
+    }
 
     #littleTitle{
         display: block;
@@ -141,12 +165,23 @@
         display: none;
     }
 
-    select{
-        width: 500px;
+    #select{
+        width: 100%;
     }
 
     .btnSubmit{
         width: 100px;
     }
+
 }
 
+@media screen and (min-width:601px) and (max-width:800px){
+    #label1.displayLabel{
+        min-width: 84%;
+    }
+    .popup{
+        display: none;
+        margin-bottom: 64px;
+        margin-top: -100%;
+    }
+}

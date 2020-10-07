@@ -140,7 +140,7 @@
                                     <span>90%</span>
                                 </div>
                             </div>
-                            
+
                             <p>Grâce</p>
                             <div class="progress">
                                 <div class="progress-bar">
@@ -291,36 +291,43 @@
             <h2 id="littleTitle">Contact</h2>
             <form id="form" method="POST">
                 <div id="partOne">
+                    <div class="select">
+                        <select id="select" class="input"  name="gender" required="required">
+                            <option value="Choisir" disabled selected>Genre..*</option>
+                            <option value="Monsieur">Monsieur</option>
+                            <option value="Madame">Madame</option>
+                            <option value="Autre">Autre</option>
+                        </select>
+                    </div>
 
-                    <select id="select" name="gender">
-                        <option value="Choisir" disabled selected>Choisir..*</option>
-                        <option value="Monsieur">Monsieur</option>
-                        <option value="Madame">Madame</option>
-                        <option value="Autre">Autre</option>
-                    </select>
-
-                    <label for="name"></label>
-                    <input type="text" id="name" name="user_name" placeholder="Nom Prénom*" required="required">
-
+                    <div class="displayLabel" id="label1">
+                        <label for="name">Nom Prénom*</label>
+                        <input type="text" id="name" class="input" name="user_name" placeholder="Nom Prénom*" required="required">
+                    </div>
                 </div>
                 <div id="partTwo">
-                    <label for="phoneNbr"></label>
-                    <input type="text" id="phoneNbr" name="user_phone" placeholder="Téléphone">
-
-                    <label for="email"></label>
-                    <input type="email" id="email" name="user_email" placeholder="exemple@email.com*" required>
+                    <div class="displayLabel">
+                        <label for="phoneNbr">Téléphone</label>
+                        <input type="text" id="phoneNbr" class="input" name="user_phone" placeholder="Téléphone">
+                    </div class="displayLabel">
+                    <div class="displayLabel">
+                        <label for="email">Mail*</label>
+                        <input type="email" id="email" class="input" name="user_email" placeholder="exemple@email.com*" required>
+                    </div>
                 </div>
-                <div id="partThree">
-                    <label for="message"></label>
-                    <textarea id="message" name="user_message" placeholder="Ton message... (Grrr)*" rows="10"
+
+                <div class="displayLabel">
+                    <label for="message">Ton message*</label>
+                    <textarea id="message" class="input" name="user_message" placeholder="Ton message... (Grrr)*" rows="10"
                         required></textarea>
                 </div>
+
                 <div id="conditionForm">
                     <p>*Champs obligatoires</p>
                 </div>
 
                 <div id="submit">
-                    <button id="btnSubmit" class="btnSubmit" type="submit">Envoie 💋</button>
+                    <button id="btnSubmit" class="btnSubmit" type="submit" onclick="audioForm()">Envoie 💋</button>
                 </div>
             </form>
 

@@ -19,6 +19,7 @@ buttonSubmit.addEventListener('click', function (event) {
     const textareaBox = document.getElementById('message');
     let citationPopup = document.getElementById('citationPopup');
 
+
     if (nameUser != "" & email != "" & textarea != "" & optionValue != "Choisir") {
 
         popupMsg.style.display = "block";
@@ -26,42 +27,85 @@ buttonSubmit.addEventListener('click', function (event) {
 
         if (optionValue === "Monsieur") {
             titlePopup.innerHTML = "Thanks Darling";
-            paragraphPopup.innerHTML = (`Merci ${optionValue} ${nameUser}, une réponse te sera envoyée au ${phoneUser} ou sur ton addresse mail: ${email} 💋`);
             citationPopup.innerHTML = '"Si tu veux jouer avec moi, j\'espère que tu connais les règles..."';
+
+
+            if (phoneUser != "") {
+                paragraphPopup.innerHTML = (`Merci ${optionValue} ${nameUser}, une réponse te sera envoyée au ${phoneUser} ou sur ton addresse mail: ${email} 💋`);
+            }
+            else {
+                paragraphPopup.innerHTML = (`Merci ${optionValue} ${nameUser}, une réponse te sera envoyée sur ton addresse mail: ${email} 💋`);
+            }
+
         }
 
         else if (optionValue === "Madame") {
             titlePopup.innerHTML = "Merci Beautée!"
-            paragraphPopup.innerHTML = (`Merci ${optionValue} ${nameUser}, une réponse te sera envoyée au ${phoneUser} ou sur ton addresse mail: ${email} 💋`);
             citationPopup.innerHTML = '"Astuce beauté? Hydratez votre peau avec les larmes de vos ennemi(e)s!"';
+            if (phoneUser != "") {
+                paragraphPopup.innerHTML = (`Merci ${optionValue} ${nameUser}, une réponse te sera envoyée au ${phoneUser} ou sur ton addresse mail: ${email} 💋`);
+            }
+            else {
+                paragraphPopup.innerHTML = (`Merci ${optionValue} ${nameUser}, une réponse te sera envoyée sur ton addresse mail: ${email} 💋`);
+            }
         }
 
         else {
             titlePopup.innerHTML = "Merci membre du peuple des Vastayas"
-            paragraphPopup.innerHTML = (`Merci ${nameUser}, une réponse te sera envoyée au ${phoneUser} ou sur ton addresse mail: ${email} 💋`);
             citationPopup.innerHTML = '"Révélez moi vos secrets..."';
+            if (phoneUser != "") {
+                paragraphPopup.innerHTML = (`Merci ${optionValue} ${nameUser}, une réponse te sera envoyée au ${phoneUser} ou sur ton addresse mail: ${email} 💋`);
+            }
+            else {
+                paragraphPopup.innerHTML = (`Merci ${optionValue} ${nameUser}, une réponse te sera envoyée sur ton addresse mail: ${email} 💋`);
+            }
         }
 
     }
-    else{
-        if(optionValue === "Choisir"){
+    else {
+
+        if (optionValue === "Choisir") {
             menuSelect.style.borderColor = "red";
+            menuSelect.addEventListener('click', function () {
+                menuSelect.style.borderColor = "black";
+            });
         }
-        else if(nameUser === ""){
+
+        else if (nameUser === "") {
             nameBox.style.borderColor = "red";
+            nameBox.addEventListener('click', function () {
+                nameBox.style.borderColor = "black";
+            });
         }
-        else if(email === ""){
+        else if (email === "") {
             emailBox.style.borderColor = "red";
+            emailBox.addEventListener('click', function () {
+                emailBox.style.borderColor = "black";
+            });
         }
-        else if(textarea === ""){
+
+        else if (textarea === "") {
             textareaBox.style.borderColor = "red";
+            textareaBox.addEventListener('click', function () {
+                textareaBox.style.borderColor = "black";
+            });
         }
-        else{
+
+
+
+
+        else {
             alert("Erreur");
         }
-    } 
+    }
 });
 
-
-
-
+// const audioForm = () => {
+//     let optionValueAudio = document.getElementById('select').value;
+//     console.log("test");
+//     if (optionValueAudio === "Monsieur") {
+//         const audioMonsieur = new Audio();
+//         audioMonsieur.src = "AudioCitations/SiTuVeuxJouerAvecMoi.mp3";
+//         audioMonsieur.play();
+//     }
+// }

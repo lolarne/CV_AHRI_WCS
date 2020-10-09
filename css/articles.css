@@ -68,6 +68,10 @@
     font-size: 20px;
 }
 
+.article:nth-of-type(1) .article-list p, .article:nth-of-type(3) .article-list p, .article:nth-of-type(4) .article-list p {
+    line-height: 2rem;
+}
+
 .article-list p:nth-of-type(1) {
     margin-top: 64px;
 }
@@ -252,6 +256,9 @@ h3 {
     }
     .article:nth-of-type(2) .article-citation {
         margin-top: 12px;
+    }
+    .article:nth-of-type(1) .article-list p, .article:nth-of-type(3) .article-list p, .article:nth-of-type(4) .article-list p {
+        line-height: 1.5rem;
     }
     /* .fond {
         display: flex;

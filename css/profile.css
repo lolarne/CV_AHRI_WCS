@@ -33,13 +33,6 @@
     margin-bottom: 128px;
 }
 
-.profile-citation {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 128px;
-}
-
 .profile-citation p:hover {
     transform: scale(1.02);
 }

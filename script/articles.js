@@ -1,5 +1,5 @@
 /*ANIMATION SKILL BAR*/
-window.addEventListener('load', () => {
+window.addEventListener('transitionend', () => {
     let progressBars = document.querySelectorAll('.progress-bar');
     let values = [
         '60%',

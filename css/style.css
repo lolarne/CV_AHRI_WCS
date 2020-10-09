@@ -3,20 +3,30 @@
 @import "articles.css";
 @import "contact-form.css";
 @import "footer.css";
-
-html{
+html {
     scroll-behavior: smooth;
 }
 
-*,*::after,*::before{
+*, *::after, *::before {
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
 }
 
-body{
+body {
     background-color: #F2F8FF;
     font-family: 'Ubuntu', sans-serif;
     margin: 0;
     padding: 0;
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(-30px);
+}
+
+.reveal-visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: 1s cubic-bezier(.5, 0, 0, 1);
 }

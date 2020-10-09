@@ -133,6 +133,10 @@
     font-size: 20px;
 }
 
+#partOne input{
+    width: 99%;
+}
+
 
 @media screen and (max-width:600px){
     .popup{
